@@ -1,0 +1,151 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+form {
+    display: flex;
+    margin-bottom: 1rem;
+    width:80%;
+    
+
+}
+
+input {
+    padding: .7rem;
+    margin-right: 0.7rem;
+    flex: 1;
+    border: 1px solid rgb(77, 75, 75);
+    border-radius: .5rem;
+
+}
+
+button {
+    cursor: pointer;
+    padding: .7rem;
+    background-color: #2D70FD ;
+    color: #fff;
+    border-radius: .5rem;
+    border: 0;
+    font-size: .8rem;
+}
+button:hover {
+    cursor: pointer;
+    padding: .7rem;
+    background-color: #2d6ffda0 ;
+    color: #fff;
+    border-radius: .5rem;
+    border: 0;
+    font-size: .8rem;
+}
+
+.complete-btn {
+    background-color:#2D70FD;
+    color: #fff;
+    border-radius: .5rem;
+}
+
+#task-list {
+    width: 100%;
+    max-width: 600px;
+ 
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    border-radius: .8rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#task-counter {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    h1 {font-size: 1.5rem;
+    }
+
+    input {
+        padding: 1rem;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
+        flex: 1;
+        border: 1px solid #424344;
+        border-radius: .5rem;  
+
+    }
+
+    form {width: 100%;
+        height: 100%;
+        display: grid;
+        margin-bottom: 1rem;   
+    }
+
+    & button { width: 97%;
+        padding: .5rem;
+        background-color: #2D70FD;
+        color: #fff;
+        margin-top: .5rem;
+        border-radius: .3rem;
+        border: 0;
+        font-size: .9rem;
+    }
+
+    #task-list {
+        width: 100%;
+        max-width: 600px;
+        
+    }
+    .task {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        margin: 0.5rem 0;
+        border-radius: .8rem;
+        align-items: center;       
+    }
+    .complete-btn {
+        padding: .4rem;
+        background-color: #2D70FD;
+        color: #fff;
+        margin-top: .5rem;
+        border-radius: .3rem;
+        width: 25%;
+      
+    }
+
+}
